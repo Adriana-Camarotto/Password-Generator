@@ -1,6 +1,6 @@
-# Password-Generator
+# ✨ Password-Generator
 
-## Description
+## 💡 Description
 
 Application that can be used to generate a random password. 
 ## Instalation
@@ -20,7 +20,7 @@ This app runs in the browser, and feature dynamically updating HTM and CSS power
 ![preview](https://github.com/Adriana-Camarotto/Password-Generator/blob/main/05-javascript-challenge-demo.png)
 ## Link
 
-💡[Click here to acsess!]( https://adriana-camarotto.github.io/Password-Generator/)
+[Click here to acsess!]( https://adriana-camarotto.github.io/Password-Generator/)
 
 ---
 
