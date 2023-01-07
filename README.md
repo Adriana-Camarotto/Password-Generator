@@ -20,7 +20,7 @@ This app runs in the browser, and feature dynamically updating HTM and CSS power
 ![preview](./images/xxxxxxxxxxxxxxxxxxxxxxxxx.png)
 ## Link
 
-💡[Click here to acsess:]( https://adriana-camarotto.github.io/Password-Generator/)
+💡[Click here to acsess!]( https://adriana-camarotto.github.io/Password-Generator/)
 
 ---
 
