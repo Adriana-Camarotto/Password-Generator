@@ -34,10 +34,15 @@ This app runs in the browser, and feature dynamically updating HTM and CSS power
 
 ## 📚What have I learned.
 
--
--
--
--
+- Define and use JavaScript objects;
+- Access data in Objects using Object Methods;
+- Build and iterate nested data structures;
+- Write a function expression and a function declaration;
+- Organize code through the use of functions;
+- Identify the difference between global and local scope;
+- Use custom JavaScript object methods;
+- Explain and use the this keyword;
+- Implement array methods.
 
 ---
 
