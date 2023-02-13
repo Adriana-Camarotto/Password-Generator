@@ -107,6 +107,10 @@ function getRandom(arr) {
 function generatePassword() {
   //cheking for user input
   console.log("button was clicked!");
+  //testing if this function returns something or not
+  return "Your password is: ";
+
+  
 }
 
 // Get references to the #generate element
