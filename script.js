@@ -105,8 +105,8 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-  
-
+  //cheking for user input
+  console.log("button was clicked!");
 }
 
 // Get references to the #generate element
