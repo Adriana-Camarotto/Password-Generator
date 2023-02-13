@@ -1,3 +1,9 @@
+//variable that stores the length of the password
+var characterLength = 10;
+
+// will store all the letters and special caracters possible in the password
+var options = [];
+
 // Array of special characters to be included in password
 var specialCharacters = [
   '@',
@@ -106,11 +112,23 @@ function getRandom(arr) {
 // Function to generate password with user input
 function generatePassword() {
   //cheking for user input
-  console.log("button was clicked!");
+  //console.log("button was clicked!");
+ 
+
+
+  
+
+
+  // *Present a series of prompts for password criteria 
+  // length should be between 10 and 64 characters long
+  // Character types (uppercase, lowercase, numeric, and special characters)
+  // Code should validate for each input and at least one character type should be selected 
+  // Once prompts are answered then the password should be generated and displayed in an alert or written to the page
+
+  
   //testing if this function returns something or not
   return "Your password is: ";
 
-  
 }
 
 // Get references to the #generate element
