@@ -20,7 +20,7 @@ This app runs in the browser, and feature dynamically updating HTM and CSS power
 ![preview](./assets/05-javascript-challenge-demo.png)
 ## Link
 
-[Click here to acsess!]( https://adriana-camarotto.github.io/Password-Generator/)
+[Click here to access!]( https://adriana-camarotto.github.io/Password-Generator/)
 
 ---
 
