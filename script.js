@@ -96,8 +96,13 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  //this will ever reestart here
+  optionsArr = [];
+
+ //this will prompt the user for the length of the password
   characterLength = parseInt(prompt(`How long would you like your password to be? Please enter a number between 10 and 64`)); //NaN
   // length should be between 10 and 64 characters long
+ 
   if(isNaN(characterLength) || characterLength < 10 || characterLength > 64) { //it should be false
     alert("Please try again and enter a number between 10 and 64");
     return false;
@@ -117,14 +122,6 @@ function getPasswordOptions() {
     optionsArr = optionsArr.concat(upperCasedCharacters);
   }
   return true;
-  
-  
-    
-    
-
-
-
-  console.log()
   
 }
 
@@ -164,11 +161,16 @@ var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  get
+  var correctPasswordOptions = getPasswordOptions() // this method should return true or false
+
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
 
+  if(correctPasswordOptions) {
+
+
   passwordText.value = password;
+}
 }
 
 // Add event listener to generate button
