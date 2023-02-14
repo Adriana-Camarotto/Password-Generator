@@ -1,5 +1,5 @@
 //variable that stores the length of the password
-var characterLength = 10;
+var characterLength = "";
 //will store the caracters of the password in an array
 var optionsArr = [];
 
@@ -94,6 +94,26 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+// Get references to the #generate buttom element
+var generateBtn = document.querySelector('#generate'); 
+
+// Add event listener to generate button
+generateBtn.addEventListener('click', writePassword);
+
+// Write password to the #password input
+function writePassword() {
+  var correctPasswordOptions = getPasswordOptions() // this method should return true or false
+  var passwordText = document.querySelector('#password');
+
+  //if correctPasswordOptions is true then the password should be generated and displayed to the page
+  if(correctPasswordOptions) {
+  var newPassword = generatePassword();
+  passwordText.value = newPassword;
+  } else {
+    passwordText.value = "";
+  }
+}
+
 // Function to prompt user for password options
 function getPasswordOptions() {
   //this will ever reestart here
@@ -121,48 +141,33 @@ function getPasswordOptions() {
   if (confirm("Do you want uppercase characters?")) {
     optionsArr = optionsArr.concat(upperCasedCharacters);
   }
-  return true;
-  
+  return true;  
 }
 
 //call the function
 let options = getPasswordOptions(); 
 
-
+ // Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 // Function for getting a random element from an array
-function getRandom(arr) {
-  
+function getRandom(options) {
+  //this will generatePassword with user input on the prompts
+  var password = "";
+  for(var i = 0; i < characterLength; i++) {
+    var randomIndex = Math.floor(Math.random() * options.length);
+    password = password + optionsArr[randomIndex];
+  }
+  return password;
 }
 
 // Function to generate password with user input
 function generatePassword() {
   //cheking for user input
   //console.log("button was clicked!");
- 
-  // Code should validate for each input and at least one character type should be selected 
-  // Once prompts are answered then the password should be generated and displayed in an alert or written to the page
-
   
   //testing if this function returns something or not
-  return "Your password is: ";
-
+  return "Your password is: " + getRandom(optionsArr);
+  // Code should validate for each input and at least one character type should be selected 
 }
 
-// Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
 
-// Write password to the #password input
-function writePassword() {
-  var correctPasswordOptions = getPasswordOptions() // this method should return true or false
-  
-  //if correctPasswordOptions is true then the password should be generated and displayed to the page
-  if(correctPasswordOptions) {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
 
-  passwordText.value = password;
-  }
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
