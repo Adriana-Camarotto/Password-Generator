@@ -139,14 +139,6 @@ function generatePassword() {
   //cheking for user input
   //console.log("button was clicked!");
  
-
-
-  
-
-
-
-
- 
   // Code should validate for each input and at least one character type should be selected 
   // Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
@@ -162,15 +154,14 @@ var generateBtn = document.querySelector('#generate');
 // Write password to the #password input
 function writePassword() {
   var correctPasswordOptions = getPasswordOptions() // this method should return true or false
-
+  
+  //if correctPasswordOptions is true then the password should be generated and displayed to the page
+  if(correctPasswordOptions) {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
 
-  if(correctPasswordOptions) {
-
-
   passwordText.value = password;
-}
+  }
 }
 
 // Add event listener to generate button
