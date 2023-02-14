@@ -1,5 +1,5 @@
 //variable that stores the length of the password
-var characterLength = "";
+var characterLength = 64;
 //will store the caracters of the password in an array
 var optionsArr = [];
 
@@ -144,10 +144,9 @@ function getPasswordOptions() {
   return true;  
 }
 
-//call the function
-let options = getPasswordOptions(); 
 
- // Once prompts are answered then the password should be generated and displayed in an alert or written to the page
+
+// Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 // Function for getting a random element from an array
 function getRandom(options) {
   //this will generatePassword with user input on the prompts

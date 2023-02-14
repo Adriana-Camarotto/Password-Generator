@@ -3,28 +3,28 @@
 ## 💡 Description
 
 Application that can be used to generate a random password. 
-## Instalation
+## 📌 Instalation
 
 N/A
 
 ---
 
-## Usage
+## 📌 Usage
 
 This app runs in the browser, and feature dynamically updating HTM and CSS powered by JavaScript code. It has a clean and polished and responsive user interface that adapts to multiple screen sizes.
 
 ---
 
-## Screenshot
+## 📷 Screenshot
 
-![preview](./assets/05-javascript-challenge-demo.png)
-## Link
+![preview](./assets/sreenshot-GenPassword.jpeg)
+## 🎯 Link
 
 [Click here to access!]( https://adriana-camarotto.github.io/Password-Generator/)
 
 ---
 
-## 🚀Tecnologies
+## 🚀 Tecnologies
 
 - HTML
 - CSS
@@ -32,7 +32,7 @@ This app runs in the browser, and feature dynamically updating HTM and CSS power
 
 ---
 
-## 📚What have I learned.
+## 📚 What have I learned.
 
 - Define and use JavaScript objects;
 - Access data in Objects using Object Methods;
@@ -52,7 +52,7 @@ N/A
 
 ---
 
-## Lisence
+## 👉🏻 Lisence
 
 Please refer to the LICENSE in the repo.
 
