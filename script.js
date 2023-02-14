@@ -140,6 +140,8 @@ function getPasswordOptions() {
   }
   if (confirm("Do you want uppercase characters?")) {
     optionsArr = optionsArr.concat(upperCasedCharacters);
+  } else { 
+     alert("You must choose at least one type of character");
   }
   return true;  
 }
