@@ -1,8 +1,8 @@
 //variable that stores the length of the password
 var characterLength = 10;
+//will store the caracters of the password in an array
+var optionsArr = [];
 
-// will store all the letters and special caracters possible in the password
-var options = [];
 
 // Array of special characters to be included in password
 var specialCharacters = [
@@ -96,6 +96,34 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  characterLength = parseInt(prompt(`How long would you like your password to be? Please enter a number between 10 and 64`)); //NaN
+  // length should be between 10 and 64 characters long
+  if(isNaN(characterLength) || characterLength < 10 || characterLength > 64) { //it should be false
+    alert("Please try again and enter a number between 10 and 64");
+    return false;
+  }
+  // Present a series of prompts for password criteria 
+  // Character types (uppercase, lowercase, numeric, and special characters)
+  if (confirm("Do you want special characters?")) {
+    optionsArr = optionsArr.concat(specialCharacters);
+  }
+  if (confirm("Do you want numeric characters?")) {
+    optionsArr = optionsArr.concat(numericCharacters);
+  }
+  if (confirm("Do you want lowercase characters?")) {
+    optionsArr = optionsArr.concat(lowerCasedCharacters);
+  }
+  if (confirm("Do you want uppercase characters?")) {
+    optionsArr = optionsArr.concat(upperCasedCharacters);
+  }
+  return true;
+  
+  
+    
+    
+
+
+
   console.log()
   
 }
@@ -119,9 +147,9 @@ function generatePassword() {
   
 
 
-  // *Present a series of prompts for password criteria 
-  // length should be between 10 and 64 characters long
-  // Character types (uppercase, lowercase, numeric, and special characters)
+
+
+ 
   // Code should validate for each input and at least one character type should be selected 
   // Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
@@ -136,6 +164,7 @@ var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
+  get
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
 
