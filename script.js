@@ -141,6 +141,7 @@ function getPasswordOptions() {
   if (confirm("Do you want uppercase characters?")) {
     optionsArr = optionsArr.concat(upperCasedCharacters);
   } else { 
+    // Code should validate for each input and at least one character type should be selected 
      alert("You must choose at least one type of character");
   }
   return true;  
@@ -167,7 +168,7 @@ function generatePassword() {
   
   //testing if this function returns something or not
   return "Your password is: " + getRandom(optionsArr);
-  // Code should validate for each input and at least one character type should be selected 
+  
 }
 
 
