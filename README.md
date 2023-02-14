@@ -46,7 +46,7 @@ This app runs in the browser, and feature dynamically updating HTM and CSS power
 
 ---
 
-## Credits
+## 📌 Credits
 
 N/A
 
